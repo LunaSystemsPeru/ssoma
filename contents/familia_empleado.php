@@ -77,7 +77,7 @@ if ($resultado->num_rows > 0) {
 
         <!--Page Load Progress Bar [ OPTIONAL ]-->
         <link href="../public/plugins/pace/pace.min.css" rel="stylesheet">
-        <script src="plugins/pace/pace.min.js"></script>
+        <script src="../public/plugins/pace/pace.min.js"></script>
 
 
 
@@ -114,7 +114,7 @@ if ($resultado->num_rows > 0) {
 
             <!--NAVBAR-->
             <!--===================================================-->
-            <?php include("includes/header.php"); ?>
+            <?php include("../fixed/header.php"); ?>
             <!--===================================================-->
             <!--END NAVBAR-->
 
@@ -475,14 +475,14 @@ if ($resultado->num_rows > 0) {
 
                 <!--MAIN NAVIGATION-->
                 <!--===================================================-->
-                <?php include("includes/main_navigation.php"); ?>
+                <?php include("../fixed/main_navigation.php"); ?>
                 <!--===================================================-->
                 <!--END MAIN NAVIGATION-->
 
                 <!-- TAB DE LA DERECHA -->
                 <!--ASIDE-->
                 <!--===================================================-->
-                <?php include("includes/aside_rigth.php"); ?>
+                <?php include("../fixed/aside_rigth.php"); ?>
                 <!--===================================================-->
                 <!--END ASIDE-->
             </div>
@@ -491,7 +491,7 @@ if ($resultado->num_rows > 0) {
 
             <!-- FOOTER -->
             <!--===================================================-->
-            <?php include("includes/footer.php"); ?>
+            <?php include("../fixed/footer.php"); ?>
             <!--===================================================-->
             <!-- END FOOTER -->
 
@@ -512,52 +512,52 @@ if ($resultado->num_rows > 0) {
         <!--=================================================-->
 
         <!--jQuery [ REQUIRED ]-->
-        <script src="js/jquery-2.1.1.min.js"></script>
+        <script src="../public/js/jquery-2.1.1.min.js"></script>
 
 
         <!--BootstrapJS [ RECOMMENDED ]-->
-        <script src="js/bootstrap.min.js"></script>
+        <script src="../public/js/bootstrap.min.js"></script>
 
 
         <!--Fast Click [ OPTIONAL ]-->
-        <script src="plugins/fast-click/fastclick.min.js"></script>
+        <script src="../public/plugins/fast-click/fastclick.min.js"></script>
 
 
         <!--Nifty Admin [ RECOMMENDED ]-->
-        <script src="js/nifty.min.js"></script>
+        <script src="../public/js/nifty.min.js"></script>
 
 
         <!--Switchery [ OPTIONAL ]-->
-        <script src="plugins/switchery/switchery.min.js"></script>
+        <script src="../public/plugins/switchery/switchery.min.js"></script>
 
 
         <!--Bootstrap Select [ OPTIONAL ]-->
-        <script src="plugins/bootstrap-select/bootstrap-select.min.js"></script>
+        <script src="../public/plugins/bootstrap-select/bootstrap-select.min.js"></script>
 
         <!--Bootstrap Validator [ OPTIONAL ]-->
-        <script src="plugins/bootstrap-validator/bootstrapValidator.min.js"></script>
+        <script src="../public/plugins/bootstrap-validator/bootstrapValidator.min.js"></script>
 
 
         <!--DataTables [ OPTIONAL ]-->
-        <script src="plugins/datatables/media/js/jquery.dataTables.js"></script>
-        <script src="plugins/datatables/media/js/dataTables.bootstrap.js"></script>
-        <script src="plugins/datatables/extensions/Responsive/js/dataTables.responsive.min.js"></script>
+        <script src="../public/plugins/datatables/media/js/jquery.dataTables.js"></script>
+        <script src="../public/plugins/datatables/media/js/dataTables.bootstrap.js"></script>
+        <script src="../public/plugins/datatables/extensions/Responsive/js/dataTables.responsive.min.js"></script>
 
 
         <!--Demo script [ DEMONSTRATION ]-->
-        <script src="js/demo/nifty-demo.min.js"></script>
+        <script src="../public/js/demo/nifty-demo.min.js"></script>
 
 
         <!--Masked Input [ OPTIONAL ]-->
-        <script src="plugins/masked-input/jquery.maskedinput.min.js"></script>
+        <script src="../public/plugins/masked-input/jquery.maskedinput.min.js"></script>
 
 
         <!--Form validation [ SAMPLE ]-->
-        <script src="js/demo/form-validation.js"></script>
+        <script src="../public/js/demo/form-validation.js"></script>
 
 
         <!--DataTables Sample [ SAMPLE ]-->
-        <script src="js/demo/tables-datatables.js"></script>
+        <script src="../public/js/demo/tables-datatables.js"></script>
 
         <script type="text/javascript">
             function EditaFamilia(empleado, familiar) {

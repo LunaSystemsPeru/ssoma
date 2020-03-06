@@ -5,7 +5,7 @@
 		<!--================================-->
 		<div class="navbar-header">
 			<a href="index.php" class="navbar-brand">
-				<img src="img/logo.png" alt="Nifty Logo" class="brand-icon">
+				<img src="../public/img/logo.png" alt="Nifty Logo" class="brand-icon">
 				<div class="brand-title">
 					<span class="brand-text">SGSI</span>
 				</div>
@@ -83,7 +83,7 @@
 									<li>
 										<a href="#" class="media">
 											<div class="media-left">
-												<img src="img/av4.png" alt="Profile Picture" class="img-circle img-sm">
+												<img src="../public/img/av4.png" alt="Profile Picture" class="img-circle img-sm">
 											</div>
 											<div class="media-body">
 												<div class="text-nowrap">Lucy sent you a message</div>
@@ -96,7 +96,7 @@
 									<li>
 										<a href="#" class="media">
 											<div class="media-left">
-												<img src="img/av3.png" alt="Profile Picture" class="img-circle img-sm">
+												<img src="../public/img/av3.png" alt="Profile Picture" class="img-circle img-sm">
 											</div>
 											<div class="media-body">
 												<div class="text-nowrap">Jackson sent you a message</div>
@@ -171,7 +171,7 @@
 									<li>
 										<a href="#" class="media">
 											<div class="media-left">
-												<img src="img/av3.png" alt="Profile Picture" class="img-circle img-sm">
+												<img src="../public/img/av3.png" alt="Profile Picture" class="img-circle img-sm">
 											</div>
 											<div class="media-body">
 												<div class="text-nowrap">Jackson sent you a message</div>
@@ -291,7 +291,7 @@
 				<li id="dropdown-user" class="dropdown">
 					<a href="#" data-toggle="dropdown" class="dropdown-toggle text-right">
 						<span class="pull-right">
-							<img class="img-circle img-user media-object" src="img/av1.png" alt="Profile Picture">
+							<img class="img-circle img-user media-object" src="../public/img/av1.png" alt="Profile Picture">
 						</span>
 						<div class="username hidden-xs"><?php echo $_SESSION['empleado'];?></div>
 					</a>

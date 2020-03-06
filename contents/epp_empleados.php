@@ -117,7 +117,7 @@ if ($resultado->num_rows > 0) {
 
             <!--NAVBAR-->
             <!--===================================================-->
-            <?php include("includes/header.php"); ?>
+            <?php include("../fixed/header.php"); ?>
             <!--===================================================-->
             <!--END NAVBAR-->
 
@@ -253,14 +253,14 @@ if ($resultado->num_rows > 0) {
 
                 <!--MAIN NAVIGATION-->
                 <!--===================================================-->
-<?php include("includes/main_navigation.php"); ?>
+<?php include("../fixed/main_navigation.php"); ?>
                 <!--===================================================-->
                 <!--END MAIN NAVIGATION-->
 
                 <!-- TAB DE LA DERECHA -->
                 <!--ASIDE-->
                 <!--===================================================-->
-<?php include("includes/aside_rigth.php"); ?>
+<?php include("../fixed/aside_rigth.php"); ?>
                 <!--===================================================-->
                 <!--END ASIDE-->
             </div>
@@ -269,7 +269,7 @@ if ($resultado->num_rows > 0) {
 
             <!-- FOOTER -->
             <!--===================================================-->
-<?php include("includes/footer.php"); ?>
+<?php include("../fixed/footer.php"); ?>
             <!--===================================================-->
             <!-- END FOOTER -->
 

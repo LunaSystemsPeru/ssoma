@@ -97,7 +97,7 @@
 			
 			<!--NAVBAR-->
 			<!--===================================================-->
-			<?php include("includes/header.php"); ?>
+			<?php include("../fixed/header.php"); ?>
 			<!--===================================================-->
 			<!--END NAVBAR-->
 			
@@ -601,7 +601,7 @@
 									<div class="pad-all">
 										<div class="media mar-btm">
 											<div class="media-left">
-												<img src="img/av6.png" class="img-md img-circle" alt="Avatar">
+												<img src="../public/img/av6.png" class="img-md img-circle" alt="Avatar">
 											</div>
 											<div class="media-body">
 												<p class="text-lg text-semibold mar-no">Brenda Fuller</p>
@@ -827,14 +827,14 @@
 				
 				<!--MAIN NAVIGATION-->
 				<!--===================================================-->
-				<?php include("includes/main_navigation.php");?>
+				<?php include("../fixed/main_navigation.php");?>
 				<!--===================================================-->
 				<!--END MAIN NAVIGATION-->
 				
 				<!-- TAB DE LA DERECHA -->
 				<!--ASIDE-->
 				<!--===================================================-->
-				<?php include("includes/aside_rigth.php");?>
+				<?php include("../fixed/aside_rigth.php");?>
 				<!--===================================================-->
 				<!--END ASIDE-->
 				
@@ -844,7 +844,7 @@
 			
 			<!-- FOOTER -->
 			<!--===================================================-->
-			<?php include("includes/footer.php");?>
+			<?php include("../fixed/footer.php");?>
 			<!--===================================================-->
 			<!-- END FOOTER -->
 			
@@ -864,48 +864,48 @@
 		<!--=================================================-->
 		
 		<!--jQuery [ REQUIRED ]-->
-		<script src="js/jquery-2.1.1.min.js"></script>
+		<script src="../public/js/jquery-2.1.1.min.js"></script>
 		
 		
 		<!--BootstrapJS [ RECOMMENDED ]-->
-		<script src="js/bootstrap.min.js"></script>
+		<script src="../public/js/bootstrap.min.js"></script>
 		
 		
 		<!--Fast Click [ OPTIONAL ]-->
-		<script src="plugins/fast-click/fastclick.min.js"></script>
+		<script src="../public/plugins/fast-click/fastclick.min.js"></script>
 		
 		
 		<!--Nifty Admin [ RECOMMENDED ]-->
-		<script src="js/nifty.min.js"></script>
+		<script src="../public/js/nifty.min.js"></script>
 		
 		
 		<!--Morris.js [ OPTIONAL ]-->
-		<script src="plugins/morris-js/morris.min.js"></script>
-		<script src="plugins/morris-js/raphael-js/raphael.min.js"></script>
+		<script src="../public/plugins/morris-js/morris.min.js"></script>
+		<script src="../public/plugins/morris-js/raphael-js/raphael.min.js"></script>
 		
 		
 		<!--Sparkline [ OPTIONAL ]-->
-		<script src="plugins/sparkline/jquery.sparkline.min.js"></script>
+		<script src="../public/plugins/sparkline/jquery.sparkline.min.js"></script>
 		
 		
 		<!--Skycons [ OPTIONAL ]-->
-		<script src="plugins/skycons/skycons.min.js"></script>
+		<script src="../public/plugins/skycons/skycons.min.js"></script>
 		
 		
 		<!--Switchery [ OPTIONAL ]-->
-		<script src="plugins/switchery/switchery.min.js"></script>
+		<script src="../public/plugins/switchery/switchery.min.js"></script>
 		
 		
 		<!--Bootstrap Select [ OPTIONAL ]-->
-		<script src="plugins/bootstrap-select/bootstrap-select.min.js"></script>
+		<script src="../public/plugins/bootstrap-select/bootstrap-select.min.js"></script>
 		
 		
 		<!--Demo script [ DEMONSTRATION ]-->
-		<script src="js/demo/nifty-demo.min.js"></script>
+		<script src="../public/js/demo/nifty-demo.min.js"></script>
 		
 		
 		<!--Specify page [ SAMPLE ]-->
-		<script src="js/demo/dashboard.js"></script>
+		<script src="../public/js/demo/dashboard.js"></script>
 		
 		
 		<!--

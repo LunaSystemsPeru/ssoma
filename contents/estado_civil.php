@@ -108,7 +108,7 @@
 			
 			<!--NAVBAR-->
 			<!--===================================================-->
-			<?php include("includes/header.php"); ?>
+			<?php include("../fixed/header.php"); ?>
 			<!--===================================================-->
 			<!--END NAVBAR-->
 			
@@ -244,14 +244,14 @@
 				
 				<!--MAIN NAVIGATION-->
 				<!--===================================================-->
-				<?php include("includes/main_navigation.php");?>
+				<?php include("../fixed/main_navigation.php");?>
 				<!--===================================================-->
 				<!--END MAIN NAVIGATION-->
 				
 				<!-- TAB DE LA DERECHA -->
 				<!--ASIDE-->
 				<!--===================================================-->
-				<?php include("includes/aside_rigth.php");?>
+				<?php include("../fixed/aside_rigth.php");?>
 				<!--===================================================-->
 				<!--END ASIDE-->
 			</div>
@@ -260,7 +260,7 @@
 			
 			<!-- FOOTER -->
 			<!--===================================================-->
-			<?php include("includes/footer.php");?>
+			<?php include("../fixed/footer.php");?>
 			<!--===================================================-->
 			<!-- END FOOTER -->
 			

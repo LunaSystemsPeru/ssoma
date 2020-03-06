@@ -38,7 +38,7 @@
 									<div class="list-group bg-trans">
 										<a href="#" class="list-group-item">
 											<div class="media-left">
-												<img class="img-circle img-xs" src="img/av2.png" alt="Profile Picture">
+												<img class="img-circle img-xs" src="../public/img/av2.png" alt="Profile Picture">
 											</div>
 											<div class="media-body">
 												<div class="text-lg">Miguel Oyanguren</div>
@@ -47,7 +47,7 @@
 										</a>
 										<a href="#" class="list-group-item">
 											<div class="media-left">
-												<img class="img-circle img-xs" src="img/av4.png" alt="Profile Picture">
+												<img class="img-circle img-xs" src="../public/img/av4.png" alt="Profile Picture">
 											</div>
 											<div class="media-body">
 												<div class="text-lg">Victor Quispe</div>
@@ -56,7 +56,7 @@
 										</a>
 										<a href="#" class="list-group-item">
 											<div class="media-left">
-												<img class="img-circle img-xs" src="img/av3.png" alt="Profile Picture">
+												<img class="img-circle img-xs" src="../public/img/av3.png" alt="Profile Picture">
 											</div>
 											<div class="media-body">
 												<div class="text-lg">Donald Brown</div>

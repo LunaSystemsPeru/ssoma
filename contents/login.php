@@ -102,7 +102,7 @@ if (isset($_SESSION["usuario"])) {
                 <p class="pad-btm">Acceda al Sistema</p>
                 <form action="../controller/logeo.php" method="post">
                     <div class="form-group">
-                        <div class="col-sm-6">
+                        <div class="col-sm-12">
                             <?php if (isset($_GET['error'])) {
                                 $id_error = $_GET["error"];
                                 if ($id_error == 1) {

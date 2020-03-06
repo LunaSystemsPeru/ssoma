@@ -56,7 +56,7 @@
 		
 		<!--Page Load Progress Bar [ OPTIONAL ]-->
 		<link href="../public/plugins/pace/pace.min.css" rel="stylesheet">
-		<script src="plugins/pace/pace.min.js"></script>
+		<script src="../public/plugins/pace/pace.min.js"></script>
 		
 		
 		
@@ -92,7 +92,7 @@
 			
 			<!--NAVBAR-->
 			<!--===================================================-->
-			<?php include("includes/header.php"); ?>
+			<?php include("../fixed/header.php"); ?>
 			<!--===================================================-->
 			<!--END NAVBAR-->
 			
@@ -279,14 +279,14 @@
 				
 				<!--MAIN NAVIGATION-->
 				<!--===================================================-->
-				<?php include("includes/main_navigation.php");?>
+				<?php include("../fixed/main_navigation.php");?>
 				<!--===================================================-->
 				<!--END MAIN NAVIGATION-->
 				
 				<!-- TAB DE LA DERECHA -->
 				<!--ASIDE-->
 				<!--===================================================-->
-				<?php include("includes/aside_rigth.php");?>
+				<?php include("../fixed/aside_rigth.php");?>
 				<!--===================================================-->
 				<!--END ASIDE-->
 			</div>
@@ -295,7 +295,7 @@
 			
 			<!-- FOOTER -->
 			<!--===================================================-->
-			<?php include("includes/footer.php");?>
+			<?php include("../fixed/footer.php");?>
 			<!--===================================================-->
 			<!-- END FOOTER -->
 			
@@ -316,43 +316,43 @@
 		<!--=================================================-->
 		
 		<!--jQuery [ REQUIRED ]-->
-		<script src="js/jquery-2.1.1.min.js"></script>
+		<script src="../public/js/jquery-2.1.1.min.js"></script>
 		
 		
 		<!--BootstrapJS [ RECOMMENDED ]-->
-		<script src="js/bootstrap.min.js"></script>
+		<script src="../public/js/bootstrap.min.js"></script>
 		
 		
 		<!--Fast Click [ OPTIONAL ]-->
-		<script src="plugins/fast-click/fastclick.min.js"></script>
+		<script src="../public/plugins/fast-click/fastclick.min.js"></script>
 		
 		
 		<!--Nifty Admin [ RECOMMENDED ]-->
-		<script src="js/nifty.min.js"></script>
+		<script src="../public/js/nifty.min.js"></script>
 		
 		
 		<!--Switchery [ OPTIONAL ]-->
-		<script src="plugins/switchery/switchery.min.js"></script>
+		<script src="../public/plugins/switchery/switchery.min.js"></script>
 		
 		
 		<!--Bootstrap Select [ OPTIONAL ]-->
-		<script src="plugins/bootstrap-select/bootstrap-select.min.js"></script>
+		<script src="../public/plugins/bootstrap-select/bootstrap-select.min.js"></script>
 		
 		
 		<!--Bootstrap Wizard [ OPTIONAL ]-->
-		<script src="plugins/bootstrap-wizard/jquery.bootstrap.wizard.min.js"></script>
+		<script src="../public/plugins/bootstrap-wizard/jquery.bootstrap.wizard.min.js"></script>
 		
 		
 		<!--Bootstrap Validator [ OPTIONAL ]-->
-		<script src="plugins/bootstrap-validator/bootstrapValidator.min.js"></script>
+		<script src="../public/plugins/bootstrap-validator/bootstrapValidator.min.js"></script>
 		
 		
 		<!--Demo script [ DEMONSTRATION ]-->
-		<script src="js/demo/nifty-demo.min.js"></script>
+		<script src="../public/js/demo/nifty-demo.min.js"></script>
 		
 		
 		<!--Form Wizard [ SAMPLE ]-->
-		<script src="js/demo/form-wizard.js"></script>
+		<script src="../public/js/demo/form-wizard.js"></script>
 		
 		<!--
 			

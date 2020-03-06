@@ -38,7 +38,7 @@
 		
 		<!--Page Load Progress Bar [ OPTIONAL ]-->
 		<link href="../public/plugins/pace/pace.min.css" rel="stylesheet">
-		<script src="plugins/pace/pace.min.js"></script>
+		<script src="../public/plugins/pace/pace.min.js"></script>
 		
 		
 		
@@ -152,23 +152,23 @@
 		<!--=================================================-->
 		
 		<!--jQuery [ REQUIRED ]-->
-		<script src="js/jquery-2.1.1.min.js"></script>
+		<script src="../public/js/jquery-2.1.1.min.js"></script>
 		
 		
 		<!--BootstrapJS [ RECOMMENDED ]-->
-		<script src="js/bootstrap.min.js"></script>
+		<script src="../public/js/bootstrap.min.js"></script>
 		
 		
 		<!--Fast Click [ OPTIONAL ]-->
-		<script src="plugins/fast-click/fastclick.min.js"></script>
+		<script src="../public/plugins/fast-click/fastclick.min.js"></script>
 		
 		
 		<!--Nifty Admin [ RECOMMENDED ]-->
-		<script src="js/nifty.min.js"></script>
+		<script src="../public/js/nifty.min.js"></script>
 		
 		
 		<!--Background Image [ DEMONSTRATION ]-->
-		<script src="js/demo/bg-images.js"></script>
+		<script src="../public/js/demo/bg-images.js"></script>
 		
 		
 		<!--
