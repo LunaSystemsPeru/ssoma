@@ -4,7 +4,7 @@ if (!isset($_SESSION["usuario"])) {
     header("location:login.php");
 }
 include ("includes/conectar.php");
-require ("includes/varios.php");
+require("includes/varios.php");
 
 $varios = new Varios();
 
@@ -46,39 +46,39 @@ if (isset($_POST['graba_extintor'])) {
 
 
         <!--Bootstrap Stylesheet [ REQUIRED ]-->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="../public/css/bootstrap.min.css" rel="stylesheet">
 
 
         <!--Nifty Stylesheet [ REQUIRED ]-->
-        <link href="css/nifty.min.css" rel="stylesheet">
+        <link href="../public/css/nifty.min.css" rel="stylesheet">
 
 
         <!--Font Awesome [ OPTIONAL ]-->
-        <link href="plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <link href="../public/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
 
         <!--Switchery [ OPTIONAL ]-->
-        <link href="plugins/switchery/switchery.min.css" rel="stylesheet">
+        <link href="../public/plugins/switchery/switchery.min.css" rel="stylesheet">
 
 
         <!--Bootstrap Select [ OPTIONAL ]-->
-        <link href="plugins/bootstrap-select/bootstrap-select.min.css" rel="stylesheet">
+        <link href="../public/plugins/bootstrap-select/bootstrap-select.min.css" rel="stylesheet">
 
 
         <!--Bootstrap Table [ OPTIONAL ]-->
-        <link href="plugins/datatables/media/css/dataTables.bootstrap.css" rel="stylesheet">
-        <link href="plugins/datatables/extensions/Responsive/css/dataTables.responsive.css" rel="stylesheet">
+        <link href="../public/plugins/datatables/media/css/dataTables.bootstrap.css" rel="stylesheet">
+        <link href="../public/plugins/datatables/extensions/Responsive/css/dataTables.responsive.css" rel="stylesheet">
 
 
         <!--Demo [ DEMONSTRATION ]-->
-        <link href="css/demo/nifty-demo.min.css" rel="stylesheet">
+        <link href="../public/css/demo/nifty-demo.min.css" rel="stylesheet">
 
 
         <!--SCRIPT-->
         <!--=================================================-->
 
         <!--Page Load Progress Bar [ OPTIONAL ]-->
-        <link href="plugins/pace/pace.min.css" rel="stylesheet">
+        <link href="../public/plugins/pace/pace.min.css" rel="stylesheet">
         <script src="plugins/pace/pace.min.js"></script>
 
 
@@ -116,7 +116,7 @@ if (isset($_POST['graba_extintor'])) {
 
             <!--NAVBAR-->
             <!--===================================================-->
-            <?php include ("includes/header.php"); ?>
+            <?php include("includes/header.php"); ?>
             <!--===================================================-->
             <!--END NAVBAR-->
 
@@ -309,14 +309,14 @@ if (isset($_POST['graba_extintor'])) {
 
                 <!--MAIN NAVIGATION-->
                 <!--===================================================-->
-                <?php include ("includes/main_navigation.php"); ?>
+                <?php include("includes/main_navigation.php"); ?>
                 <!--===================================================-->
                 <!--END MAIN NAVIGATION-->
 
                 <!-- TAB DE LA DERECHA -->
                 <!--ASIDE-->
                 <!--===================================================-->
-                <?php include ("includes/aside_rigth.php"); ?>
+                <?php include("includes/aside_rigth.php"); ?>
                 <!--===================================================-->
                 <!--END ASIDE-->
             </div>
@@ -325,7 +325,7 @@ if (isset($_POST['graba_extintor'])) {
 
             <!-- FOOTER -->
             <!--===================================================-->
-            <?php include ("includes/footer.php"); ?>
+            <?php include("includes/footer.php"); ?>
             <!--===================================================-->
             <!-- END FOOTER -->
 

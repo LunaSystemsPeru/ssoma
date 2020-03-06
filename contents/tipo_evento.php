@@ -38,39 +38,39 @@
 		
 		
 		<!--Bootstrap Stylesheet [ REQUIRED ]-->
-		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="../public/css/bootstrap.min.css" rel="stylesheet">
 		
 		
 		<!--Nifty Stylesheet [ REQUIRED ]-->
-		<link href="css/nifty.min.css" rel="stylesheet">
+		<link href="../public/css/nifty.min.css" rel="stylesheet">
 		
 		
 		<!--Font Awesome [ OPTIONAL ]-->
-		<link href="plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+		<link href="../public/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 		
 		
 		<!--Switchery [ OPTIONAL ]-->
-		<link href="plugins/switchery/switchery.min.css" rel="stylesheet">
+		<link href="../public/plugins/switchery/switchery.min.css" rel="stylesheet">
 		
 		
 		<!--Bootstrap Select [ OPTIONAL ]-->
-		<link href="plugins/bootstrap-select/bootstrap-select.min.css" rel="stylesheet">
+		<link href="../public/plugins/bootstrap-select/bootstrap-select.min.css" rel="stylesheet">
 		
 		
 		<!--Bootstrap Table [ OPTIONAL ]-->
-		<link href="plugins/datatables/media/css/dataTables.bootstrap.css" rel="stylesheet">
-		<link href="plugins/datatables/extensions/Responsive/css/dataTables.responsive.css" rel="stylesheet">
+		<link href="../public/plugins/datatables/media/css/dataTables.bootstrap.css" rel="stylesheet">
+		<link href="../public/plugins/datatables/extensions/Responsive/css/dataTables.responsive.css" rel="stylesheet">
 		
 		
 		<!--Demo [ DEMONSTRATION ]-->
-		<link href="css/demo/nifty-demo.min.css" rel="stylesheet">
+		<link href="../public/css/demo/nifty-demo.min.css" rel="stylesheet">
 		
 		
 		<!--SCRIPT-->
 		<!--=================================================-->
 		
 		<!--Page Load Progress Bar [ OPTIONAL ]-->
-		<link href="plugins/pace/pace.min.css" rel="stylesheet">
+		<link href="../public/plugins/pace/pace.min.css" rel="stylesheet">
 		<script src="plugins/pace/pace.min.js"></script>
 		
 		
@@ -87,7 +87,7 @@
 			Optional plugins. You may choose whether to include it in your project or not.
 			
 			DEMONSTRATION
-			This is to be removed, used for demonstration purposes only. This category must not be included in your project.
+			This is to be removed, used forï¿½demonstration purposes only.ï¿½This category must not be included in your project.
 			
 			SAMPLE
 			Some script samples which explain how to initialize plugins or components. This category should not be included in your project.
@@ -108,7 +108,7 @@
 			
 			<!--NAVBAR-->
 			<!--===================================================-->
-			<?php include ("includes/header.php"); ?>
+			<?php include("includes/header.php"); ?>
 			<!--===================================================-->
 			<!--END NAVBAR-->
 			
@@ -244,14 +244,14 @@
 				
 				<!--MAIN NAVIGATION-->
 				<!--===================================================-->
-				<?php include ("includes/main_navigation.php");?>
+				<?php include("includes/main_navigation.php");?>
 				<!--===================================================-->
 				<!--END MAIN NAVIGATION-->
 				
 				<!-- TAB DE LA DERECHA -->
 				<!--ASIDE-->
 				<!--===================================================-->
-				<?php include ("includes/aside_rigth.php");?>
+				<?php include("includes/aside_rigth.php");?>
 				<!--===================================================-->
 				<!--END ASIDE-->
 			</div>
@@ -260,7 +260,7 @@
 			
 			<!-- FOOTER -->
 			<!--===================================================-->
-			<?php include ("includes/footer.php");?>
+			<?php include("includes/footer.php");?>
 			<!--===================================================-->
 			<!-- END FOOTER -->
 			
@@ -359,7 +359,7 @@
 			Optional plugins. You may choose whether to include it in your project or not.
 			
 			DEMONSTRATION
-			This is to be removed, used for demonstration purposes only. This category must not be included in your project.
+			This is to be removed, used forï¿½demonstration purposes only.ï¿½This category must not be included in your project.
 			
 			SAMPLE
 			Some script samples which explain how to initialize plugins or components. This category should not be included in your project.

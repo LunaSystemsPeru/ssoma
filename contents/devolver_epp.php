@@ -31,7 +31,7 @@
 	</button>
 	<h4 class="modal-title">Devolucion de EPPs</h4>
 </div>
-<form class="form-horizontal" id="frm_epp" action="../inserts/devolver_epp.php" method="post">
+<form class="form-horizontal" id="frm_epp" action="../old_controller/devolver_epp.php" method="post">
 	<div class="modal-body">
 		<div class="form-group">
 			<label class="col-lg-3 control-label">Id</label>

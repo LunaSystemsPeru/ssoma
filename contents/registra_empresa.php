@@ -14,19 +14,19 @@
 		
 		
 		<!--Bootstrap Stylesheet [ REQUIRED ]-->
-		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="../public/css/bootstrap.min.css" rel="stylesheet">
 		
 		
 		<!--Nifty Stylesheet [ REQUIRED ]-->
-		<link href="css/nifty.min.css" rel="stylesheet">
+		<link href="../public/css/nifty.min.css" rel="stylesheet">
 		
 		
 		<!--Font Awesome [ OPTIONAL ]-->
-		<link href="plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+		<link href="../public/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 		
 		
 		<!--Demo [ DEMONSTRATION ]-->
-		<link href="css/demo/nifty-demo.min.css" rel="stylesheet">
+		<link href="../public/css/demo/nifty-demo.min.css" rel="stylesheet">
 		
 		
 		
@@ -35,7 +35,7 @@
 		<!--=================================================-->
 		
 		<!--Page Load Progress Bar [ OPTIONAL ]-->
-		<link href="plugins/pace/pace.min.css" rel="stylesheet">
+		<link href="../public/plugins/pace/pace.min.css" rel="stylesheet">
 		<script src="plugins/pace/pace.min.js"></script>
 		
 		
