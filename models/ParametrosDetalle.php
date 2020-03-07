@@ -97,4 +97,11 @@ class ParametrosDetalle
         return $this->c_conectar->ejecutar_idu($sql);
     }
 
+    public function verFilas () {
+        $sql = "select * from parametros_detalle 
+        where id_parametro = '$this->idParametro' 
+        order by nombre asc";
+        return $this->c_conectar->get_Cursor($sql);
+    }
+
 }

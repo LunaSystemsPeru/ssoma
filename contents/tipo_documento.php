@@ -3,23 +3,6 @@
 	if (!isset($_SESSION["usuario"])){
 		header("location:login.php");
 	}
-	include ("includes/conectar.php");
-	
-	if (isset($_POST['graba_documento'])){
-		$nombre = strtoupper($_POST['nombre']);
-		$abreviatura = strtoupper($_POST['abreviatura']);		
-		global $conn;
-		$ins_epp = 'insert into clase_documentos Values (null, "'.$nombre.'", "'.$abreviatura.'")';
-		$resultado = $conn->query($ins_epp); 
-		if(! $resultado ) {
-			die('Could not enter data: ' . mysqli_error($conn));
-		}
-		else 
-		{
-			header('Location: tipo_documento.php');
-		}
-		
-	}
 ?>
 <!DOCTYPE html>
 <html lang="es">

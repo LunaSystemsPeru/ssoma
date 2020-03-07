@@ -1,13 +1,10 @@
 <?php
 
-   require '../models/ParametrosGenerale.php';
-  $parametrosGenerale=new ParametrosGenerale();
+require '../models/ParametrosGenerale.php';
+$parametrosGenerale = new ParametrosGenerale();
 
+$parametrosGenerale->generarCodigo();
+$parametrosGenerale->setNombre(strtoupper(filter_input(INPUT_POST, 'input_nombre')));
+$parametrosGenerale->insertar();
 
-
-$parametrosGenerale->setIdParametro(filter_input(INPUT_POST, 'input_idParametro'));
-$parametrosGenerale->setNombre(filter_input(INPUT_POST, 'input_nombre'));
-
-
-
- $parametrosGenerale->insertar();
+header("Location: ../contents/parametros_generales.php");

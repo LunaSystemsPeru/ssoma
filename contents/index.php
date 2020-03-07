@@ -272,14 +272,14 @@
 										<div class="panel panel-success panel-colorful">
 											
 											<div class="pad-all">
-												<p class="text-lg text-semibold"><i class="fa fa-hdd-o"></i> HDD Usage</p>
+												<p class="text-lg text-semibold"><i class="fa fa-hdd-o"></i> Renovacion EMOS</p>
 												<p class="mar-no">
-													<span class="pull-right text-bold">132Gb</span>
-													Free Space
+													<span class="pull-right text-bold">160</span>
+													Total este año
 												</p>
 												<p class="mar-no">
-													<span class="pull-right text-bold">1,45Gb</span>
-													Used space
+													<span class="pull-right text-bold">16</span>
+													en este Mes
 												</p>
 											</div>
 											<div class="pad-all text-center">

@@ -109,4 +109,12 @@ class Ubigeo
         return $this->c_conectar->ejecutar_idu($sql);
     }
 
+    public function verDepartamentos () {
+        $sql = "select departamento, nombre 
+        from ubigeos 
+        where provincia = 00 and distrito = 00 
+        order by nombre asc";
+        return $this->c_conectar->get_Cursor($sql);
+    }
+
 }

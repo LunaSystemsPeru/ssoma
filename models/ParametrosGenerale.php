@@ -73,4 +73,8 @@ class ParametrosGenerale
         return $this->c_conectar->ejecutar_idu($sql);
     }
 
+    public function verFilas () {
+        $sql = "select * from parametros_generales order by nombre asc";
+        return $this->c_conectar->get_Cursor($sql);
+    }
 }

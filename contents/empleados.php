@@ -3,7 +3,6 @@ session_start();
 if (!isset($_SESSION["usuario"])) {
     header("location:login.php");
 }
-include("includes/conectar.php");
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -145,7 +144,7 @@ include("includes/conectar.php");
                                 <div class="pad-btm form-inline">
                                     <div class="row">
                                         <div class="col-sm-6 table-toolbar-left">
-                                            <button onclick="add_empleado()" id="demo-btn-addrow" class="btn btn-purple btn-labeled fa fa-plus">Agregar</button>
+                                            <a href="registra_empleado.php" id="demo-btn-addrow" class="btn btn-purple btn-labeled fa fa-plus">Agregar</a>
                                             <button onclick="ver_galeria()" id="demo-btn-addrow" class="btn btn-info btn-labeled fa fa-check">Ver Galeria</button>
                                             <button onclick="listar_empleados()" class="btn btn-default"><i class="fa fa-print"></i></button>
                                             <div class="btn-group">
@@ -169,24 +168,6 @@ include("includes/conectar.php");
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <?php
-                                            $empleados = "select e.codigo, e.dni, e.nombres, YEAR(CURDATE())-YEAR(fecha_nacimiento) as edad, e.fecha_nacimiento, ec.nombre as estado_civil, ca.nombre as cargo, sp.nombre as seguro_pension, gs.nombre as grupo_sanguineo, fs.nombre as factor_sanguineo, e.estado, e.imagen "
-                                                    . "from empleado as e "
-                                                    . "inner join estado_civil as ec on e.estado_civil = ec.id "
-                                                    . "inner join cargo as ca on e.cargo = ca.id "
-                                                    . "inner join seguro_pension as sp on e.seguro_pension = sp.id "
-                                                    . "inner join grupo_sanguineo as gs on e.grupo_sanguineo = gs.id "
-                                                    . "inner join factor_sanguineo as fs on e.factor_sanguineo = fs.id "
-                                                    . "where e.empresa = '" . $_SESSION['empresa'] . "' "
-                                                    . "order by e.nombres asc";
-                                            $resultado = $conn->query($empleados);
-                                            if ($resultado->num_rows > 0) {
-                                                while ($fila = $resultado->fetch_assoc()) {
-                                                    $estado = $fila['estado'];
-                                                    if ($estado == 1) {
-                                                        $v_estado = '<div class="label label-table label-success">Vigente</div>';
-                                                    }
-                                                    ?>
                                                     <tr>
                                                         <td><a class="btn-link" href="resumen_empleado.php?id=<?php echo $fila['codigo'] ?>"><?php echo $fila['codigo'] ?></a></td>
                                                         <td><?php echo $fila['dni'] ?></td>
@@ -217,14 +198,10 @@ include("includes/conectar.php");
                                                                     </li>
                                                                 </ul>
                                                             </div>
-                                                            <a href="epp_empleados.php?id=<?php echo $fila['codigo'] ?>" class="btn btn-warning btn-icon icon-lg fa fa-exclamation-triangle" title="Ver Epp"></a>
+                                                            <a href="epp_empleados.php?id=<?php echo $fila['codigo'] ?>" class="btn btn-warning btn-icon icon-lg fa fa-shield" title="Ver Epp"></a>
                                                             <button class="btn btn-info btn-icon icon-lg fa fa-trash"></button>
                                                         </td>
                                                     </tr>
-                                                    <?php
-                                                }
-                                            }
-                                            ?>
                                         </tbody>
                                     </table>
                                 </div>
