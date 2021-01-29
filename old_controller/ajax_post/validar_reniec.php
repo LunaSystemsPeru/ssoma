@@ -3,13 +3,21 @@
 $documento = filter_input(INPUT_POST, 'documento');
 
 if (strlen($documento) == 8) {
+
+
     $data = array("dni" => $documento);
     $ch = curl_init("https://api.reniec.cloud/dni/" . $documento);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
     curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "GET");
+    curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 0);
+    curl_setopt($ch, CURLOPT_TIMEOUT, 300);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
     //curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($data));
     $response = curl_exec($ch);
-    curl_close($ch);
+        curl_close($ch);
+
+
+
     if (!$response) {
         return false;
     } else {
