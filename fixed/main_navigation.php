@@ -104,6 +104,18 @@ $nombre_archivo = basename($_SERVER['PHP_SELF']);
                             </a>
                         </li>
 
+                        <li class="<?php if ($nombre_archivo == "consulta_reniec.php") {
+                            echo 'active-link';
+                        } ?>">
+                            <a href="consulta_reniec.php">
+                                <i class="fa fa-check"></i>
+                                <span class="menu-title">
+									<strong>consulta RENIEC</strong>
+                                    <!--<span class="label label-success pull-right">Top</span>-->
+								</span>
+                            </a>
+                        </li>
+
                         <!--<li>
                             <a href="#">
                                 <i class="fa fa-plus-square"></i>

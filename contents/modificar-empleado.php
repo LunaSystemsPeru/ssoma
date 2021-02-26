@@ -320,7 +320,7 @@ if ($colaborador->getFoto() == "noimage.png") {
                                                 <?php
                                                 foreach ($ubigeo->verDistritos() as $fila) {
                                                     ?>
-                                                    <option <?php echo ($fila['distrito'] == $ubigeo->getDistrito() ? "selected" : "")?> value="<?php echo $fila['distrito'] ?>"><?php echo $fila['nombre'] ?></option>
+                                                    <option <?php echo ($fila['distrito'] == $ubigeo->getDistrito() ? "selected" : "")?> value="<?php echo $fila['id_ubigeo'] ?>"><?php echo $fila['nombre'] ?></option>
                                                     <?php
                                                 }
                                                 ?>

@@ -26,8 +26,8 @@ class PDF extends PDF_Rotate
 }
 
 $pdf = new PDF('L', 'mm', array(93, 58.5));
-$pdf->SetMargins(8, 20, 0);
-$pdf->SetAutoPageBreak(true, 17);
+$pdf->SetMargins(6, 15, 0);
+$pdf->SetAutoPageBreak(true, 15);
 $pdf->AddPage();
 
 $i = 0;
@@ -52,14 +52,14 @@ if (!file_exists($imagen)) {
     $imagen = "../upload/noimage.png";
 }
 
-$pdf->SetFont('Arial', 'B', 9);
-$pdf->MultiCell(42.5, $h, $colaborador->getDato(), 0, 'L');
+$pdf->SetFont('Arial', 'B', 12);
+$pdf->MultiCell(53, $h+.5, $colaborador->getDato(), 0, 'L');
 $pdf->SetFont('Arial', '', 9);
 $pdf->Cell(42.5, $h, "Cargo: " . $cargo, 0, 1, 'L');
 $pdf->Cell(42.5, $h, "Nacionalidad: " . $nacionalidad, 0, 1, 'L');
 $pdf->Cell(42.5, $h, $documento . " Nro. " . $colaborador->getDocumento(), 0, 2, 'L');
 $pdf->Cell(42.5, $h, "Fec Nac. " . $varios->fecha_tabla($colaborador->getFechaNacimiento()), 0, 1, 'L');
-$pdf->Image($imagen, 60.048, 14.069, 26.2, 33.15);
+$pdf->Image($imagen, 61.5, 13.2, 25.7, 36.15);
 $i++;
 
 $pdf->Output('', $ruc_empresa.'-'.$colaborador->getDocumento().'.pdf', false);
