@@ -91,4 +91,16 @@ class VentaCobro
         return $this->c_conectar->get_Cursor($sql);
     }
 
+    public function verCobrosDiarios ($fechainicio, $idempresa) {
+        $sql = "select v.serie, v.numero, v.fecha as dfechadoc, bm.fecha as fecha_pago, bm.ingresa, b.nombre, c.razon_social, v.id_clientes
+                from ventas_cobros as vc
+                         inner join ventas v on vc.id_venta = v.id_venta
+                         inner join bancos_movimientos bm on vc.id_movimiento = bm.id_movimiento
+                         inner join bancos b on bm.id_banco = b.id_banco
+                         inner join clientes c on v.id_clientes = c.id_clientes
+                where bm.fecha > '$fechainicio' and v.id_empresas = '$idempresa'
+                order by fecha_pago, v.fecha asc";
+        return $this->c_conectar->get_Cursor($sql);
+    }
+
 }

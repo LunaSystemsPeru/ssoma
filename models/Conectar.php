@@ -12,6 +12,7 @@ class Conectar
 
     private static $_instancia;
     private $_connection;
+    private $_link;
     //private $_host = "localhost";
     private $_host = "lunasystemsperu.com";
     private $_user = "root_lsp";
@@ -28,6 +29,7 @@ class Conectar
         //$this->verificarLogeado();
 
         $this->_connection = new mysqli($this->_host, $this->_user, $this->_pass, $this->_db);
+        $this->_link = mysqli_connect($this->_host, $this->_user, $this->_pass, $this->_db) or die('Could not connect to database!');
         // Manejar error en base de datos
         if (mysqli_connect_error()) {
             trigger_error('Falla en la conexion de base de datos' . mysqli_connect_error(), E_USER_ERROR);
@@ -39,9 +41,9 @@ class Conectar
     {
         date_default_timezone_set('America/Lima');
 
-        if (!isset($_SESSION)) {
+      /*  if (!isset($_SESSION)) {
             session_start();
-        }
+        }*/
     }
 
     private function verificarLogeado()
@@ -107,6 +109,14 @@ class Conectar
     public function getConnection()
     {
         return $this->_connection;
+    }
+
+    /**
+     * Metodo para obtener el link de conexion a la base de datos
+     */
+    public function getLink()
+    {
+        return $this->_link;
     }
 
     /**

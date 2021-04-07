@@ -149,6 +149,8 @@ if (filter_input(INPUT_GET, 'id_empresa')) {
                                        class="btn btn-info btn-labeled fa fa-plus">Solo por Cobrar</a>
                                     <button class="btn btn-success btn-labeled fa fa-search" data-target="#modal_filtrar"
                                             data-toggle="modal">Filtrar</button>
+                                    <a href="cobros_diarios.php" id="demo-btn-addrow"
+                                       class="btn btn-info btn-labeled fa fa-money">ver Pagos x Fecha</a>
                                     <button type="button" id="demo-btn-addrow"
                                             onclick="exportTableToExcel('demo-dt-basic', 'ventas')"
                                             class="btn btn-info btn-labeled fa fa-file-excel-o">Exportar a Excel
