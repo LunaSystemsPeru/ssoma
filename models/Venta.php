@@ -403,7 +403,7 @@ class Venta
     }
 
     public function verPeriodosEmpresa () {
-        $sql = "select distinct(DATE_FORMAT(v.fecha, '%Y%m')) as periodo from ventas as v ";
+        $sql = "select distinct(DATE_FORMAT(v.fecha, '%Y%m')) as periodo from ventas as v order by periodo desc";
         return $this->c_conectar->get_Cursor($sql);
     }
 

@@ -25,19 +25,24 @@ if (!$usuario->validarUsuario()) {
             $empresa->setIdEmpresa($usuario->getIdEmpresa());
             $empresa->obtenerDatos();
             $link = $conectar->getLink();
-           /* if (isset($_SESSION)) {
-                session_destroy();
+            /* if (isset($_SESSION)) {
+                 session_destroy();
+             }
+ */
+            try {
+                $zebra = new Zebra_Session($link, 'sEcUr1tY_c0dE');
+            } catch (Exception $e) {
+                echo $e;
             }
-*/            $zebra = new Zebra_Session($link, 'sEcUr1tY_c0dE');
 
             $_SESSION["usuario"] = $usuario->getIdUsuario();
             $_SESSION["empresa"] = $usuario->getIdEmpresa();
             $_SESSION["ruc_empresa"] = $empresa->getRuc();
             $_SESSION["nombre_empresa"] = $empresa->getRazon();
             $_SESSION["empleado"] = $usuario->getDato();
-           // echo "ingrese";
-
-             header("Location: ../contents/index.php");
+            // xx
+            //print_r($_SESSION);
+            header("Location: ../contents/index.php");
         } else {
             //usuario bloqueado
             //echo "error al ingresar";

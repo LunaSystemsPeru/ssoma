@@ -6,7 +6,7 @@ if (strlen($documento) == 8) {
 
 
     $data = array("dni" => $documento);
-    $ch = curl_init("https://api.reniec.cloud/dni/" . $documento);
+    $ch = curl_init("http://chimbote.store/apis/peru-consult/public/consultaDNI.php?dni=" . $documento);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
     curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "GET");
     curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 0);
@@ -24,7 +24,7 @@ if (strlen($documento) == 8) {
         $json = json_decode($response, true);
         if ($json != null) {
             $fila_cliente['documento'] = $json['dni'];
-            $fila_cliente['nombre'] = $json['apellido_paterno'] . ' ' . $json['apellido_materno'] . ' ' . $json['nombres'];
+            $fila_cliente['nombre'] = $json['apellidoPaterno'] . ' ' . $json['apellidoMaterno'] . ' ' . $json['nombres'];
             $rpt = (object)array(
                 "success" => "reniec",
                 "entity" => $fila_cliente

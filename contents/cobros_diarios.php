@@ -179,11 +179,11 @@ $empresa->obtenerDatos();
                                 <thead>
                                 <tr>
                                     <th class="text-center">Item</th>
+                                    <th class="text-center">Fecha Pago</th>
+                                    <th class="text-center">Monto Pagado</th>
                                     <th class="text-center">Fecha Doc</th>
                                     <th class="text-center">Documento</th>
                                     <th class="text-center">Cliente</th>
-                                    <th class="text-center">Fecha Pago</th>
-                                    <th class="text-center">Monto Pagado</th>
                                     <th class="text-center">Banco</th>
                                 </tr>
                                 </thead>
@@ -196,11 +196,11 @@ $empresa->obtenerDatos();
                                     ?>
                                     <tr>
                                         <td><?php echo $item ?></td>
+                                        <td class="text-center"><?php echo $fila['fecha_pago'] ?></td>
+                                        <td class="text-right"><?php echo number_format($fila['ingresa'], 2) ?></td>
                                         <td class="text-center"><?php echo $fila['dfechadoc']?></td>
                                         <td class="text-center"><?php echo $fila['serie'] . "-" . $fila['numero'] ?></td>
                                         <td><?php echo $fila['razon_social'] ?></td>
-                                        <td class="text-center"><?php echo $fila['fecha_pago'] ?></td>
-                                        <td class="text-right"><?php echo number_format($fila['ingresa'], 2) ?></td>
                                         <td><?php echo $fila['nombre'] ?></td>
                                     </tr>
                                     <?php

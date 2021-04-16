@@ -218,7 +218,7 @@ class Zebra_Session {
     public function __construct(
         &$link,
         $security_code,
-        $session_lifetime = '',
+        $session_lifetime = 28800,
         $lock_to_user_agent = true,
         $lock_to_ip = false,
         $gc_probability = '',
@@ -258,7 +258,7 @@ class Zebra_Session {
 
             // if $session_lifetime is specified and is an integer number
             if ($session_lifetime != '' && is_integer($session_lifetime))
-
+                //echo "acualizare gc_maxlifetime " . $session_lifetime . "<br>";
                 // set the new value
                 ini_set('session.gc_maxlifetime', (int)$session_lifetime);
 

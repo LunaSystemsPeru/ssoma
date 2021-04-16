@@ -99,7 +99,7 @@ class VentaCobro
                          inner join bancos b on bm.id_banco = b.id_banco
                          inner join clientes c on v.id_clientes = c.id_clientes
                 where bm.fecha > '$fechainicio' and v.id_empresas = '$idempresa'
-                order by fecha_pago, v.fecha asc";
+                order by fecha_pago asc, v.fecha asc";
         return $this->c_conectar->get_Cursor($sql);
     }
 
