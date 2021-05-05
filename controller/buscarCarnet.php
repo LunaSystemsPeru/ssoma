@@ -1,5 +1,5 @@
 <?php
-session_start();
+include '../fixed/iniciaSession.php';
 require '../models/Colaborador.php';
 require '../models/Empresa.php';
 

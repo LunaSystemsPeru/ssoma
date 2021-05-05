@@ -2,6 +2,7 @@
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
+include '../fixed/iniciaSession.php';
 
 require '../models/Venta.php';
 require '../models/Cliente.php';
@@ -75,4 +76,8 @@ if (filter_input(INPUT_POST, 'hidden_idventa')) {
 }
 
 $periodo = $varios->fecha_periodo($venta->getFecha());
-header("Location: ../contents/ventas.php?id_empresa=".$venta->getIdEmpresa()."&periodo=" . $periodo);
+if (filter_input(INPUT_POST, 'hidden_idventa')) {
+    header("Location: ../contents/detalle_venta.php?idventa=".$venta->getIdVenta());
+} else {
+    header("Location: ../contents/ventas.php?id_empresa=".$venta->getIdEmpresa()."&periodo=" . $periodo);
+}

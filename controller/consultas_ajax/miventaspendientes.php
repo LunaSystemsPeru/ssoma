@@ -1,6 +1,5 @@
 <?php
-session_start();
-
+include '../../fixed/iniciaSession.php';
 require '../../models/Venta.php';
 
 $venta = new Venta();

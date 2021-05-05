@@ -1,5 +1,6 @@
 <?php
-session_start();
+//include '../fixed/iniciaSession.php';
+
 if (isset($_SESSION["usuario"])) {
     header("location:index.php");
 }

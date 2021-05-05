@@ -1,8 +1,5 @@
 <?php
-session_start();
-if (!isset($_SESSION["usuario"])) {
-    header("location:login.php");
-}
+include '../fixed/iniciaSession.php';
 
 require_once '../models/Banco.php';
 require_once '../models/Empresa.php';

@@ -1,5 +1,5 @@
 <?php
-session_start();
+include '../fixed/iniciaSession.php';
 require_once '../models/Venta.php';
 require_once '../models/Empresa.php';
 require_once '../models/VentaNota.php';

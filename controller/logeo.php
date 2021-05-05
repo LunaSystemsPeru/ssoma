@@ -31,6 +31,7 @@ if (!$usuario->validarUsuario()) {
  */
             try {
                 $zebra = new Zebra_Session($link, 'sEcUr1tY_c0dE');
+                $activesession = $zebra->get_active_sessions();
             } catch (Exception $e) {
                 echo $e;
             }

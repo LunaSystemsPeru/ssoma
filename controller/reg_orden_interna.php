@@ -1,5 +1,5 @@
 <?php
-session_start();
+include '../fixed/iniciaSession.php';
 require '../models/Orden_Interna.php';
 $orden = new Orden_Interna();
 
