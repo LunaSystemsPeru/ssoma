@@ -203,6 +203,9 @@ if (filter_input(INPUT_GET, 'id_empresa')) {
                                     if ($id_documento == 36) {
                                         $documento = "NC";
                                     }
+                                    if ($id_documento == 47) {
+                                        $documento = "ND";
+                                    }
 
                                     $doc = $documento . " | " . $fila['serie'] . " - " . $varios->zerofill($fila['numero'], 3);
                                     $total = $fila['total'];
